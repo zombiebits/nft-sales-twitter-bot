@@ -17,8 +17,8 @@ import looksRareABI from './abi/looksRareABI.json';
 import { config } from './config';
 import fiatSymbols from './fiat-symobols.json';
 
-export const alchemyAPIUrl = 'https://mainnet.infura.io/v3/';
-export const alchemyAPIKey = process.env.ALCHEMY_API_KEY;
+export const alchemyAPIUrl = 'https://eth-mainnet.alchemyapi.io/v2/';
+export const alchemyAPIKey = 'YwR1NjX1BYbNsLBonEXY45p0iTD0N1Ms';
 
 const tokenContractAddress = config.contract_address;
 
