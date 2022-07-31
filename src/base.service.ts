@@ -17,7 +17,7 @@ import looksRareABI from './abi/looksRareABI.json';
 import { config } from './config';
 import fiatSymbols from './fiat-symobols.json';
 
-export const alchemyAPIUrl = 'https://eth-mainnet.alchemyapi.io/v2/';
+export const alchemyAPIUrl = 'https://mainnet.infura.io/v3/';
 export const alchemyAPIKey = process.env.ALCHEMY_API_KEY;
 
 const tokenContractAddress = config.contract_address;
@@ -25,10 +25,10 @@ const tokenContractAddress = config.contract_address;
 const provider = new ethers.providers.JsonRpcProvider(alchemyAPIUrl + alchemyAPIKey);
 
 const twitterConfig = {
-  consumer_key: process.env.TW_CONSUMER_KEY,
-  consumer_secret: process.env.TW_CONSUMER_SECRET,
-  access_token: process.env.TW_ACCESS_TOKEN_KEY,
-  access_token_secret: process.env.TW_ACCESS_TOKEN_SECRET,
+  consumer_key: "5TPVyQXqt5tO6ljaAMlkv9ofH",
+  consumer_secret: "3mmlBCXP8Q44w0NQvjdaN8YTAYXqXIzR0wRg9Ut094oDhHboha",
+  access_token: "1553252837341237251-MDZ2RcGJzrGucyqwRJiGtULrdF0JI4",
+  access_token_secret: "ljxs81gxUcmrxd24K1cx3FiXusYYWheTiN9bGGjpAE6ap",
 };
 
 const twitterClient = new twit(twitterConfig);
